@@ -1,7 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import dipConcept from '../assets/dip_concept.png';
-
+import avatarDip from '../assets/avatar_dip.png';
 import hashIcon from '../assets/hash_icon.png';
 
 const Hero = () => {
@@ -13,7 +12,7 @@ const Hero = () => {
                 <motion.img
                     src={hashIcon}
                     alt="Decorative Icon"
-                    className="absolute -top-[100px] -left-[100px] w-[200px] h-[200px] md:w-[250px] md:h-[250px] z-0 opacity-80"
+                    className="absolute -top-[100px] -left-[100px] w-[300px] h-[300px] md:w-[300px] md:h-[300px] z-0 opacity-80"
                     initial={{ rotate: -15, scale: 0.8 }}
                     animate={{ rotate: 15, scale: 1 }}
                     transition={{
@@ -26,14 +25,14 @@ const Hero = () => {
 
                 {/* Large Hero Image - Front */}
                 <motion.div
-                    className="relative z-10 w-full max-w-lg aspect-square rounded-2xl overflow-hidden shadow-2xl border-2 border-gray-100"
+                    className="relative z-10 w-full max-w-[500px] md:max-w-[700px] aspect-square rounded-2xl overflow-hidden shadow-2xl border-2 border-gray-100"
                     initial={{ opacity: 0, x: -50 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.8 }}
                 >
                     <img
-                        src={dipConcept}
-                        alt="Random Tech Visual"
+                        src={avatarDip}
+                        alt="BrianOoi"
                         className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
                     />
                 </motion.div>

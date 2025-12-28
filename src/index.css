@@ -32,3 +32,9 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #fbbf24;
 }
+
+/* Text Stroke Utility */
+.text-stroke-yellow {
+  -webkit-text-stroke: 1px #fbbf24;
+  color: #ffffff;
+}
