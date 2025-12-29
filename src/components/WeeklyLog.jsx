@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronDown, BookOpen, Cpu } from 'lucide-react';
 import { weeks } from '../data/weeks';
-import dipConcept from '../assets/dip_concept.png';
 
 const WeeklyLog = () => {
     const [expandedWeek, setExpandedWeek] = useState(null);
@@ -49,7 +48,7 @@ const WeeklyLog = () => {
                             {/* Image: ALWAYS VISIBLE, 600px Height, 800px Width (via container) */}
                             <div className="w-full h-[600px] rounded-xl overflow-hidden bg-gray-900 border border-gray-800 mb-6 mx-auto relative group-hover:shadow-lg transition-all">
                                 <img
-                                    src={dipConcept}
+                                    src={week.image}
                                     alt="DIP Concept"
                                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                                 />
@@ -82,9 +81,9 @@ const WeeklyLog = () => {
                                                 <BookOpen size={16} className="mt-0.5" />
                                                 Learning Details
                                             </div>
-                                            <p className="text-gray-300 leading-relaxed text-lg">
+                                            <div className="text-gray-300 leading-relaxed text-lg space-y-6 text-justify">
                                                 {week.details}
-                                            </p>
+                                            </div>
                                         </div>
                                     </div>
                                 </motion.div>

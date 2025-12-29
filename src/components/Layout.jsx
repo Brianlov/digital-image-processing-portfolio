@@ -65,7 +65,7 @@ const Layout = ({ children }) => {
                                 />
                                 {/* Text inside bubble */}
                                 <p className="relative z-10 text-black font-casual font-bold text-lg -rotate-12 mb-4 mr-2">
-                                    Touch Me!!!
+                                    The power of Digital Image Processing!!!
                                 </p>
                             </motion.div>
                         )}
