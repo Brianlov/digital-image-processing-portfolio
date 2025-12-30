@@ -10,6 +10,9 @@ import week1Radio from '../assets/week1_radio.png';
 import week1Remote from '../assets/week1_remote_sensing.png';
 import week1Uv from '../assets/week1_uv.png';
 import week1VisIr from '../assets/week1_visible_ir.jpg';
+import week2Ai1 from '../assets/week2_ai_1.png';
+import week2Ai2 from '../assets/week2_ai_2.png';
+import week2Cover from '../assets/week2_cover.png';
 
 export const weeks = [
     {
@@ -105,10 +108,64 @@ export const weeks = [
     },
     {
         id: 2,
-        title: "Week 2: Image Enhancement (Spatial Domain)",
-        summary: "Basic gray-level transformations.",
-        details: "Studied point processing techniques: image negatives, log transformations, and power-law (gamma) transformations. Implemented histogram equalization.",
-        image: week1Intro
+        title: "Week 2: AI vs Real Photography",
+        summary: "AI-Generated Images vs. Real Photographs: The Blurring Line in 2025.",
+        details: (
+            <div className="space-y-8">
+                <div className="space-y-4">
+                    <h3 className="text-xl font-bold text-accent">AI-Generated Images vs. Real Photographs: The Blurring Line in 2025</h3>
+                    <p className="text-gray-300 leading-relaxed text-justify">
+                        In late 2025, AI-generated images have reached such high quality that they frequently fool casual viewers and even some experts. Traditional photography captures real light from actual scenes, while AI creates entirely synthetic visuals through advanced digital image processing. This rapid progress continues to reshape creativity, trust, and the visual media landscape.
+                    </p>
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div className="group space-y-2">
+                        <h4 className="text-accent font-bold text-center group-hover:text-white transition-colors">ChatGPT Generated</h4>
+                        <div className="rounded-lg overflow-hidden border border-white/5 shadow-md group-hover:shadow-accent/20 transition-all duration-300">
+                            <ZoomableImage src={week2Ai1} alt="ChatGPT Generated Image" className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500" />
+                        </div>
+                    </div>
+                    <div className="group space-y-2">
+                        <h4 className="text-accent font-bold text-center group-hover:text-white transition-colors">Gemini Generated</h4>
+                        <div className="rounded-lg overflow-hidden border border-white/5 shadow-md group-hover:shadow-accent/20 transition-all duration-300">
+                            <ZoomableImage src={week2Ai2} alt="Gemini Generated Image" className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500" />
+                        </div>
+                    </div>
+                </div>
+
+                <div className="space-y-6">
+                    <div>
+                        <h4 className="text-lg font-bold text-white mb-2">Key Differences in Creation and Nature</h4>
+                        <p className="text-gray-300 leading-relaxed text-justify">
+                            Real photographs result from light hitting a sensor to record an existing moment. AI-generated images are produced by neural networks that learn statistical patterns from millions of photos and then synthesize new pixels from text prompts. Digital image processing in AI involves diffusion models that gradually refine random noise into coherent pictures.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h4 className="text-lg font-bold text-white mb-2">Cost and Accessibility</h4>
+                        <p className="text-gray-300 leading-relaxed text-justify">
+                            Professional real photography demands costly gear, locations, models, and editing time. AI image generation requires only a subscription to tools like Midjourney or Flux, with each image created in seconds. This low barrier has made high-quality visuals affordable for everyone.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h4 className="text-lg font-bold text-white mb-2">Realism & Current Capabilities</h4>
+                        <p className="text-gray-300 leading-relaxed text-justify">
+                            Today’s best AI models create faces, products, and scenes that appear photorealistic at first glance. Subtle digital processing flaws, such as inconsistent lighting or minor anatomical errors, still reveal many AI images on close inspection. Real photos naturally maintain perfect physical consistency without artificial reconstruction.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h4 className="text-lg font-bold text-white mb-2">The Future Outlook</h4>
+                        <p className="text-gray-300 leading-relaxed text-justify">
+                            Within the next few years, improved diffusion techniques and multimodal training will make AI images virtually indistinguishable from real ones. Watermarking, detection tools, and new regulations will likely emerge to preserve trust in visual content. Hybrid workflows combining real captures with AI enhancement will become the standard in many industries.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        ),
+        image: week2Cover
     },
     {
         id: 3,
